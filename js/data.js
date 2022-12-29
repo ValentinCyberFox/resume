@@ -3,7 +3,7 @@ export const mainInfo = {
   nameEng: 'Valentin',
   lastNameRu: 'Лесков',
   lastNameEng: 'Leskov',
-  jobTitle: 'FONTEND DEVELOPER',
+  jobTitle: 'FRONTEND DEVELOPER',
   infoTextEng: 'Junior front-end developer with a desire to develop and improve the quality of his work. Team player. Always aiming for the best results. I admit my mistakes and immediately correct them. Ready for the challenge! ',
   infoTextRu: 'Джуниор фронтент разработчик с желанием развиваться и повышать качество своей работы. Командный игрок. Всегда нацелен на результат в лучшем виде. Признаю свои ошибки и тут же исправляю их. Готов к трудностям! ',
 
