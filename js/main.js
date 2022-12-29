@@ -28,7 +28,8 @@ let handleSetLanguage = () => {
   lang.innerText !== 'ENG' ? document.querySelector('.content__skill-block .content__title').innerText = data.mainInfo.skillsRu : document.querySelector('.content__skill-block .content__title').innerText = data.mainInfo.skillsEng
   lang.innerText !== 'ENG' ? document.querySelector('.content__hobbies-block .content__title').innerText = data.mainInfo.hobbiesTitleRu : document.querySelector('.content__hobbies-block .content__title').innerText = data.mainInfo.hobbiesTitleEng
   lang.innerText !== 'ENG' ? document.querySelector('.content__hobbies-item').innerText = data.mainInfo.hobbiesItemRu : document.querySelector('.content__hobbies-item').innerText = data.mainInfo.hobbiesItemEng
-
+  lang.innerText !== 'ENG' ? document.querySelector('.experience__company').innerText = data.mainInfo.experienceCompanyRu : document.querySelector('.experience__company').innerText = data.mainInfo.experienceCompanyEng
+  lang.innerText !== 'ENG' ? document.querySelector('.experience__jobtitle').innerText = data.mainInfo.experienceJobTitleRu : document.querySelector('.experience__jobtitle').innerText = data.mainInfo.experienceJobTitleEng
   experience.map((item, index) => {
     lang.innerText !== 'ENG' ? item.querySelector('span').innerText = data.workExperience.works[index].itemTitleRu : item.querySelector('span').innerText = data.workExperience.works[index].itemTitleEng
     lang.innerText !== 'ENG' ? item.querySelector('p').innerText = data.workExperience.works[index].infoTextRu : item.querySelector('p').innerText = data.workExperience.works[index].infoTextEng
