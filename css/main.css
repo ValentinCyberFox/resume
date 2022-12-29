@@ -395,10 +395,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-
   html,
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   :root {
