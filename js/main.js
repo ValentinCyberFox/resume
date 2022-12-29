@@ -54,18 +54,6 @@ const handleChangeLang = (e) => {
 
   handleSetLanguage()
 
-  /*  lang.innerText !== 'ENG' ? mainName.innerText = data.mainInfo.nameRu : mainName.innerText = data.mainInfo.nameEng
-   lang.innerText !== 'ENG' ? mainSubtitle.innerText = data.mainInfo.lastNameRu : mainSubtitle.innerText = data.mainInfo.lastNameEng
-   lang.innerText !== 'ENG' ? mainAbout.innerText = data.mainInfo.infoTextRu : mainAbout.innerText = data.mainInfo.infoTextEng
-   lang.innerText !== 'ENG' ? experienceWork.innerText = data.mainInfo.experienceWorkRu : experienceWork.innerText = data.mainInfo.experienceWorkEng
-   lang.innerText !== 'ENG' ? experienceJobTitle.innerText = data.mainInfo.experienceJobTitleRu : experienceJobTitle.innerText = data.mainInfo.experienceJobTitleEng
-   lang.innerText !== 'ENG' ? contactBlock.innerText = data.mainInfo.contactBlockRu : contactBlock.innerText = data.mainInfo.contactBlockEng
-   lang.innerText !== 'ENG' ? educationBlock.innerText = data.mainInfo.educationBlockRu : educationBlock.innerText = data.mainInfo.educationBlockEng
-   lang.innerText !== 'ENG' ? skillsTitle.innerText = data.mainInfo.skillsRu : skillsTitle.innerText = data.mainInfo.skillsEng
-   lang.innerText !== 'ENG' ? hobbiesTitle.innerText = data.mainInfo.hobbiesTitleRu : hobbiesTitle.innerText = data.mainInfo.hobbiesTitleEng
-   lang.innerText !== 'ENG' ? hobbiesItem.innerText = data.mainInfo.hobbiesItemRu : hobbiesItem.innerText = data.mainInfo.hobbiesItemEng
-   lang.innerText !== 'ENG' ? experienceCompany.innerText = data.mainInfo.experienceCompanyRu : experienceCompany.innerText = data.mainInfo.experienceCompanyEng */
-
 }
 
 handleSetLanguage()
