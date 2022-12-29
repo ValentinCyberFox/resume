@@ -37,15 +37,15 @@ export const workExperience = {
       itemTitleRu: 'Страница магазина "Мой Маркет"',
       itemTitleEng: 'Store page "My Market"',
       infoTextRu: `Работа была сделана в двух вариантах: сверстанная страница по макету с помощью HTML + CSS и проект на React (+ хуки + Redux). 
-                    Примеры того, что было сдлано, а так же увидеть стек можно на моей странице в гитхабе. Ссылка в контактах.`,
+                    Примеры того, что было сделано, а так же увидеть стек можно на моей странице в гитхабе. Ссылка в контактах.`,
       infoTextEng: `The work was done in two versions: a layout page using HTML + CSS and a React project (+ hooks + Redux).
                     Examples of what was done, as well as see the stack, can be found on my github page. Link in contacts.`,
     },
     {
       itemTitleRu: `Парсер 2Гис, Twitter`,
       itemTitleEng: `Parser 2GIS, Twitter`,
-      infoTextRu: `Парсеры были написанны с помощью прикладного по (BrowserAutomationStudio) в основе которого лежит js код. В случае с 2Гис софт собирал всевозможные данные по запросу. Реализация была сденана с помощью API 2Гис (без использования прокси и отпечатков браузера). Скрипт работал в многопотоке, был не требователен к машине пользователя и сохранял данные в БД (Mongo DB).
-      В парсере Твиттера собирались посты пользователей, доступные по открытому API. Моментальная скорость работы. Так же сохранение в БД.`,
+      infoTextRu: `Парсеры были написаны с помощью прикладного по (BrowserAutomationStudio) в основе которого лежит js код. В случае с 2Гис софт собирал всевозможные данные по запросу. Реализация была сделана с помощью API 2Гис (без использования прокси и отпечатков браузера). Скрипт работал в многопотоке, был не требователен к машине пользователя и сохранял данные в БД (Mongo DB).
+      В парсере Твиттера собирались посты пользователей, доступные по-открытому API. Моментальная скорость работы. Так же сохранение в БД.`,
 
       infoTextEng: `Parsers were written using application software (BrowserAutomationStudio) based on js code. In the case of 2GIS software
       collected all sorts of data on request. The implementation was made using the 2GIS API (without the use of proxies and browser fingerprints). The script worked in multithread, was not demanding
@@ -64,8 +64,7 @@ export const workExperience = {
     {
       itemTitleRu: `Прочий софт и скрипты"`,
       itemTitleEng: `Other software and scripts`,
-      infoTextRu: `Были и другие проекты. Подробнее о них могу расскзаать в реальной беседе. Были и автопубликаторы, и конвертеры и тд. Все писалось на BAS, но в 
-      основе каждого проекта лежалао умение работать с разметкой, запросами и js-кодом`,
+      infoTextRu: `Были и другие проекты. Подробнее о них могу рассказать в реальной беседе. Были и автопубликаторы, и конвертеры и тд. Все писалось на BAS, но в  основе каждого проекта лежало умение работать с разметкой, запросами и js-кодом`,
       infoTextEng: `There were other projects as well. I can tell more about them in a real conversation. There were auto-publishers, and converters, and so on. Everything was written in BAS, but in The basis of each project was the ability to work with markup, requests and js code`,
     },
   ],
