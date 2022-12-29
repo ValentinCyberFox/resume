@@ -56,12 +56,9 @@ export const workExperience = {
     {
       itemTitleRu: `Программа для массового скачивания видео из Тик-Тока без водянного знака с возможностью редактирования видео в "два клика"`,
       itemTitleEng: `A program for mass downloading videos from Tik-Tok without a watermark with the ability to edit video in "two clicks"`,
-      infoTextRu: `Одна из моих любимых работ. В многопоточном режиме скачивались видео по нужному запросу. Через сторонний сервис с помощью API удалялся водяной знак и так же
-      через еще один сторонний сервис по API можно было редактировать видео (удалять звук, накладывать свой водяной знак и тд). На выходе пользователь получал готовые видео,
-      разложенные по папкам.`,
+      infoTextRu: `Одна из моих любимых работ. В многопоточном режиме скачивались видео по нужному запросу. Через сторонний сервис с помощью API удалялся водяной знак и так же через еще один сторонний сервис по API можно было редактировать видео (удалять звук, накладывать свой водяной знак и тд). На выходе пользователь получал готовые видео, разложенные по папкам.`,
       infoTextEng: `One of my favorite works. In multi-threaded mode, videos were downloaded on the required request. Through a third-party service, using the API, the watermark was removed and the same
-      through another third-party API service, it was possible to edit the video (remove sound, apply your own watermark, etc.). At the output, the user received ready-made videos,
-      divided into folders.`,
+      through another third-party API service, it was possible to edit the video (remove sound, apply your own watermark, etc.). At the output, the user received ready-made videos, divided into folders.`,
     },
 
     {
@@ -69,8 +66,7 @@ export const workExperience = {
       itemTitleEng: `Other software and scripts`,
       infoTextRu: `Были и другие проекты. Подробнее о них могу расскзаать в реальной беседе. Были и автопубликаторы, и конвертеры и тд. Все писалось на BAS, но в 
       основе каждого проекта лежалао умение работать с разметкой, запросами и js-кодом`,
-      infoTextEng: `There were other projects as well. I can tell more about them in a real conversation. There were auto-publishers, and converters, and so on. Everything was written in BAS, but in
-      The basis of each project was the ability to work with markup, requests and js code`,
+      infoTextEng: `There were other projects as well. I can tell more about them in a real conversation. There were auto-publishers, and converters, and so on. Everything was written in BAS, but in The basis of each project was the ability to work with markup, requests and js code`,
     },
   ],
 }
