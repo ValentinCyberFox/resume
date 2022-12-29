@@ -244,7 +244,7 @@ body {
   margin-bottom: 4px;
   font-style: italic;
   font-size: calc(25rem / var(--font-size-maket));
-  line-height: 110%;
+  line-height: 135%;
   text-transform: uppercase;
   color: #4f4f4f;
 }
@@ -395,6 +395,7 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+
   html,
   body {
     font-size: 12px;
@@ -429,7 +430,7 @@ footer {
     gap: 15px;
   }
 
-  .container{
+  .container {
     padding: 0;
   }
 }
