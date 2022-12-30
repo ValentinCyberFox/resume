@@ -18,10 +18,7 @@ let toogleLang = () => {
 
 let handleSetLanguage = () => {
   let lang = document.querySelector('.footer__button_active')
-
-
   lang.innerText !== 'ENG' ? document.querySelector('.titles__block-main-title').innerHTML = data.mainInfo.nameRu : document.querySelector('.titles__block-main-title').innerText = data.mainInfo.nameEng
-
   lang.innerText !== 'ENG' ? document.querySelector('.titles__block-subtitle').innerText = data.mainInfo.lastNameRu : document.querySelector('.titles__block-subtitle').innerText = data.mainInfo.lastNameEng
   lang.innerText !== 'ENG' ? document.querySelector('.titles__block-about').innerHTML = data.mainInfo.infoTextRu : document.querySelector('.titles__block-about').innerHTML = data.mainInfo.infoTextEng
   lang.innerText !== 'ENG' ? document.querySelector('.content__title').innerText = data.mainInfo.experienceWorkRu : document.querySelector('.content__title').innerText = data.mainInfo.experienceWorkEng
