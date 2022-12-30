@@ -1,3 +1,4 @@
+
 export const mainInfo = {
   nameRu: 'Валентин',
   nameEng: 'Valentin',
@@ -36,10 +37,9 @@ export const workExperience = {
     {
       itemTitleRu: 'Страница магазина "Мой Маркет"',
       itemTitleEng: 'Store page "My Market"',
-      infoTextRu: `Работа была сделана в двух вариантах: сверстанная страница по макету с помощью HTML + CSS и проект на React (+ хуки + Redux). 
-                    Примеры того, что было сделано, а так же увидеть стек можно на моей странице в гитхабе. Ссылка в контактах.`,
+      infoTextRu: 'Работа была сделана в двух вариантах: сверстанная страница по макету с помощью HTML + CSS и проект на React (+ хуки + Redux). Примеры того, что было сделано, а так же увидеть стек можно на <a href="https://github.com/ValentinCyberFox/product-page-demo-react"> моей странице в гитхабе.</a> Ссылка в контактах.',
       infoTextEng: `The work was done in two versions: a layout page using HTML + CSS and a React project (+ hooks + Redux).
-                    Examples of what was done, as well as see the stack, can be found on my github page. Link in contacts.`,
+                    Examples of what was done, as well as see the stack, can be found on <a href="https://github.com/ValentinCyberFox/product-page-demo-react"> my github page. </a> Link in contacts.`,
     },
     {
       itemTitleRu: `Парсер 2Гис, Twitter`,
@@ -62,7 +62,7 @@ export const workExperience = {
     },
 
     {
-      itemTitleRu: `Прочий софт и скрипты"`,
+      itemTitleRu: `Прочий софт и скрипты`,
       itemTitleEng: `Other software and scripts`,
       infoTextRu: `Были и другие проекты. Подробнее о них могу рассказать в реальной беседе. Были и автопубликаторы, и конвертеры и тд. Все писалось на BAS, но в  основе каждого проекта лежало умение работать с разметкой, запросами и js-кодом`,
       infoTextEng: `There were other projects as well. I can tell more about them in a real conversation. There were auto-publishers, and converters, and so on. Everything was written in BAS, but in The basis of each project was the ability to work with markup, requests and js code`,
