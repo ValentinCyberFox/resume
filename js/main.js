@@ -5,10 +5,20 @@ let experience = [...document.querySelectorAll('.experience__item .titles__block
 let educationContent = [...document.querySelectorAll('.content__education-info')]
 let toogleBtns = [...document.querySelectorAll('.footer__button')]
 
+let toogleBtnsStyle = [...document.querySelectorAll('.footer__button-style')]
+
+console.log(toogleBtnsStyle)
+
 toogleBtns.map((item, index) => {
   browserLang.includes('en') & item.innerText === 'ENG' ? item.classList.add('footer__button_active') : ''
   browserLang.includes('ru') & item.innerText === 'RUS' ? item.classList.add('footer__button_active') : ''
 })
+
+let toogleStyle = () => {
+  toogleBtnsStyle.map(item => {
+    item.addEventListener('click', handleChangeStyle);
+  })
+}
 
 let toogleLang = () => {
   toogleBtns.map(item => {
@@ -54,7 +64,26 @@ const handleChangeLang = (e) => {
   handleSetLanguage()
 
 }
+
+
+const handleChangeStyle = (e) => {
+  console.log('нажал кнопку')
+  document.documentElement.classList.toggle('dark')
+  
+    console.log('светлый стиль')
+    document.querySelector('.footer__button-style').classList.toggle('footer__button-style_light')
+  
+
+  /*     if(document.documentElement.hasAttribute('theme')){
+        document.documentElement.removeAttribute('theme');
+      }
+      else{
+        document.documentElement.setAttribute('theme', 'dark');
+      }; */
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   handleSetLanguage()
   toogleLang()
-});
+  toogleStyle()
+})

@@ -9,6 +9,7 @@ body {
   font-style: var(--font-style-normal);
   font-size: var(--font-size-maket) px;
   line-height: 1.21;
+  color: var(--main-font-color);
   background-color: var(--bcg);
   scroll-behavior: smooth;
 }
@@ -163,7 +164,6 @@ body {
 .titles__block-subtitle {
   font-size: calc(74rem / var(--font-size-maket));
   letter-spacing: 0.03em;
-  color: var(--sub-title);
 }
 
 .titles__block-job-title {
@@ -289,7 +289,6 @@ body {
 .content__skill-title {
   width: 33%;
   text-transform: uppercase;
-  color: #333;
 }
 
 .content__skill-power-list {
@@ -334,7 +333,7 @@ footer {
   flex-direction: row;
   align-items: center;
   padding: 10px;
-  gap: 10px;
+  gap: 30px;
 }
 
 .footer__blocks-item {}
@@ -383,6 +382,44 @@ footer {
   transform: scale(1.1);
 }
 
+.footer__button-night {
+  filter: invert(90%) sepia(68%) saturate(4169%) hue-rotate(6deg) brightness(106%) contrast(100%);
+}
+
+.footer__button-style {
+  position: relative;
+  transition: all 0.5s;
+}
+
+.footer__button-style img {
+  width: 30px;
+}
+
+.footer__button-style_light::before {
+  content: "";
+  position: absolute;
+  right: 25%;
+  top: 21%;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 0 7px 4px #f3ff00;
+  background-color: #f3ff00e0;
+  opacity: 0;
+  transition: all 0.5s;
+  animation: light 0.2s both;
+}
+
+@keyframes light {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 /* MEDIA */
 /*
 для смартфонов — 320 px, 480 px и выше;
@@ -413,7 +450,6 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-
   html,
   body {
     font-size: 14px;
@@ -451,10 +487,13 @@ footer {
   .container {
     padding: 0;
   }
+
+  .footer__blocks {
+    gap: 5px;
+  }
 }
 
 @media print {
-
   html,
   body {
     -webkit-print-color-adjust: exact;
