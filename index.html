@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/root.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <script type="module" src="./js/main.js" defer></script>
+  <script type="module">
+    import { toggleGallery, scrollGallery } from './js/main.js';
+
+    window.toggleGallery = toggleGallery;
+    window.scrollGallery = scrollGallery;
+  </script>
+
+  <title>Resume</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="blocks">
+        <div class="left__block">
+          <div class="content header__content">
+            <div class="content__img-block">
+              <div class="content__decore"></div>
+              <div class="contant__img">
+                <img src="./img/main-photo.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="titles__block content">
+            <div class="title__main-block">
+              <h1 class="titles__block-main-title">
+                Валентин
+              </h1>
+              <h2 class="titles__block-subtitle">
+                Лесков
+              </h2>
+              <h3 class="titles__block-job-title">
+                FRONTEND DEVELOPER
+              </h3>
+            </div>
+            <div class="titles__block-about">
+            </div>
+          </div>
+          <div class="experience titles__block-experience content">
+            <div class="content__title-block">
+              <div class="content__title second-title">
+                <h3>ОПЫТ РАБОТЫ</h3>
+              </div>
+              <div class="content__hr">
+                <span class="content__hr-fst"></span>
+                <span class="content__hr-scd"></span>
+              </div>
+            </div>
+            <div class="experience__items">
+              <div class="experience__item">
+                <div class="experience__info">
+                  <div class="experience__year">
+                    2019 - 2024
+                  </div>
+                  <div class="experience__company">
+                    Интернет
+                  </div>
+                  <div class="experience__jobtitle">
+                  </div>
+                </div>
+                <div class="titles__block-about">
+                  <span></span>
+                  <p></p>
+                  <span class="spoiler" onclick="toggleGallery()">Нажмите для просмотра галереи</span>
+                  <div class="gallery-container" style="display: none;">
+                    <div class="gallery" id="imageGallery">
+                      <img src="./img/main-forum.png" alt="Image 1">
+                      <img src="./img/rezka-mirror.png" alt="Image 2">
+                      <img src="./img/v-bucks.png" alt="Image 3">
+                      <!-- Добавьте другие изображения по аналогии -->
+                    </div>
+                    <div class="arrow left" onclick="scrollGallery(-1)">&#9665;</div>
+                    <div class="arrow right" onclick="scrollGallery(1)">&#9655;</div>
+                  </div>
+                </div>
+                <div class="titles__block-about">
+                  <span></span>
+                  <p> </p>
+                </div>
+                <div class="titles__block-about">
+                  <span></span>
+                  <p> </p>
+                </div>
+                <div class="titles__block-about">
+                  <span></span>
+                  <p> </p>
+                </div>
+                <div class="titles__block-about">
+                  <span></span>
+                  <p> </p>
+                </div>
+              </div>
+            </div>
+            <!-- Модальное окно -->
+            <div id="myModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <div class="modal-navigation">
+                <div class="arrow left" onclick="scrollGalleryInModal(-1)">&#9665;</div>
+                <img class="modal-content" id="expandedImg">
+                <div class="arrow right" onclick="scrollGalleryInModal(1)">&#9655;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right__block">
+          <div class="content__contact-block content">
+            <div class="content__title-block">
+              <div class="content-title second-title">
+                <h3>КОНТАКТЫ</h3>
+              </div>
+              <div class="content__hr">
+                <span class="content__hr-fst"></span>
+                <span class="content__hr-scd"></span>
+              </div>
+            </div>
+            <ul class="content__contact-list">
+              <li class="content-item">
+                <div class="content-item-img">
+                  <img src="./img/icons/telegram.png" alt="telegram contact">
+                </div>
+                <span class="content-item-text"><a href="https://t.me/cyber_fox_27">
+                    Telegram Contact</a></span>
+              </li>
+              <li class="content-item">
+                <div class="content-item-img">
+                  <img src="./img/icons/mail.svg" alt="mail contact">
+                </div>
+                <span class="content-item-text"><a href="mailto:partner@mymarket.com">Mail Contact</a>
+                </span>
+              </li>
+              <li class="content-item">
+                <div class="content-item-img">
+                  <img src="./img/icons/github.png" alt="page on github">
+                </div>
+                <span class="content-item-text"><a href="https://github.com/ValentinCyberFox">
+                    Page om GitHub</a></span>
+              </li>
+              <li class="content-item">
+                <div class="content-item-img">
+                  <img src="./img/icons/forum.png" alt="forum project">
+                </div>
+                <span class="content-item-text"><a href="https://www.goldrushguide.ru/members/bugs-bunny.1/">
+                    GoldRuhGuide Forum</a></span>
+              </li>
+            </ul>
+          </div>
+          <div class="content__education-block content">
+            <div class="content__title-block">
+              <div class="content__title second-title">
+                <h3>ОБРАЗОВАНИЕ</h3>
+              </div>
+              <div class="content__hr">
+                <span class="content__hr-fst"></span>
+                <span class="content__hr-scd"></span>
+              </div>
+            </div>
+            <div class="content__education-item">
+              <div class="content__education-info">
+                <div class="content__education-speciality">Основы Frontend-разработки</div>
+                <div class="content__education-year">2022</div>
+                <div class="content__education-university">АНО ВО "Университет Иннополис"</div>
+              </div>
+              <div class="content__education-info">
+                <div class="content__education-speciality">Web-программист: с нуля до первых проектов (сетевая)</div>
+                <div class="content__education-year">2022</div>
+                <div class="content__education-university">"Национальный исследовательский Томский государственный
+                  университет"</div>
+              </div>
+              <div class="content__education-info">
+                <div class="content__education-speciality">Управление качеством</div>
+                <div class="content__education-year">2009-2015</div>
+                <div class="content__education-university">Федеральное государственное бюджетное образовательное
+                  учреждение высшего профессионального образования "Тихоокеанский государственный университет"</div>
+              </div>
+            </div>
+          </div>
+          <div class="content__skill-block content">
+            <div class="content__title-block">
+              <div class="content__title second-title">
+                <h3>НАВЫКИ</h3>
+              </div>
+              <div class="content__hr">
+                <span class="content__hr-fst"></span>
+                <span class="content__hr-scd"></span>
+              </div>
+            </div>
+            <ul class="content__skill-list">
+              <li class="content__skill-item">
+                <div class="content__skill-title">
+                  html
+                </div>
+                <ul class="content__skill-power-list">
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item"></li>
+                </ul>
+              </li>
+              <li class="content__skill-item">
+                <div class="content__skill-title">
+                  css
+                </div>
+                <ul class="content__skill-power-list">
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item"></li>
+                </ul>
+              </li>
+              <li class="content__skill-item">
+                <div class="content__skill-title">
+                  js
+                </div>
+                <ul class="content__skill-power-list">
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item"></li>
+                </ul>
+              </li>
+              <li class="content__skill-item">
+                <div class="content__skill-title">
+                  react
+                </div>
+                <ul class="content__skill-power-list">
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item"></li>
+                  <li class="content__skill-power-item"></li>
+                </ul>
+              </li>
+              <li class="content__skill-item">
+                <div class="content__skill-title">
+                  redux
+                </div>
+                <ul class="content__skill-power-list">
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item"></li>
+                  <li class="content__skill-power-item"></li>
+                </ul>
+              </li>
+              <li class="content__skill-item">
+                <div class="content__skill-title">
+                  bem
+                </div>
+                <ul class="content__skill-power-list">
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item content__skill-power-item_good"></li>
+                  <li class="content__skill-power-item"></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="content__hobbies-block content">
+            <div class="content__title-block">
+              <div class="content__title second-title">
+                <h3>Хобби</h3>
+              </div>
+              <div class="content__hr">
+                <span class="content__hr-fst"></span>
+                <span class="content__hr-scd"></span>
+              </div>
+            </div>
+            <div class="content__hobbies-item">
+              Люблю посмотреть душевное кино, почитать интересную книгу. Но в основном мое хобби - это кодинг!
+              Поэтому стараюсь по возможности "набивать руку" на различных пет-проектах.
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__blocks">
+          <div class="footer__blocks-item">
+            <button type="button" class="footer__button">
+              RUS
+            </button>
+          </div>
+          <div class="footer__blocks-item">
+            <button type="button" class="footer__button">
+              ENG
+            </button>
+          </div>
+          <div class="footer__blocks-item">
+            <a href="https://github.com/ValentinCyberFox/resume/raw/main/Resume%20Print.pdf" target="_blank"
+              rel="noopener">
+              <button type="button" class="footer__download-button">
+                DOWNLOAD RESUME
+              </button>
+            </a>
+          </div>
+          <div class="footer__blocks-item">
+            <button type="button" class="footer__button-style footer__button-style_light">
+              <img src="./img/icons/light-on.png" alt="night" id="toogleStyleBtn" class="footer__button-night">
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
